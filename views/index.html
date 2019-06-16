@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Matt Brothen Profile</title>
+</head>
+<body>
+    <header>
+        <!--Insert image of self include motto word or phrase about page-->
+        <img src="bitmoji.png" alt="Matt Brothen Avatar">
+        <h1>Matt Brothen</h1>
+    </header>
+    <nav>
+        <!--Insert navigation menu, about.html, contact.html portfilio.html use UL-->
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+        </ul>
+
+    </nav>
+    <main>
+            <!--2 paragraph about page-->
+            <h2>Who's Matt?</h2>
+            <p>Matt is a web software development student out of Kenosha Wisconsin.  Matt specializes in fullstack web development.  My tools include using PHP, Java, and javascript for backend application development.  MySQL and mongoDB for datamanagment.  Reach Angular and Sass for front end development.<br>From an organization webpage to a full fledged web application I can build it.</p>
+
+        <section>
+            <!---->
+            <h2>Multimedia</h2>
+            <div>
+                <button type = "button" onclick="showMedia()">Show</button>
+                <button type ="button" onclick="hideMedia()">Hide</button>
+            </div>
+            <media>
+            <video width="320" height="180" controls id='movie'>
+                <source src="http://apollo.gtc.edu/~hurc/152-182/video/lighthouse.m4v" type="video/mp4">
+                <source src="http://apollo.gtc.edu/~hurc/152-182/video/lighthouse.ogv" type="video/ogg">
+                <img src="http://apollo.gtc.edu/~hurc/152-182/video/lighthouse.jpg">
+            </video> 
+            <p id='movieDownload'><strong>Download Video:</strong><a href="http://apollo.gtc.edu/~hurc/152-182/video/lighthouse.m4v">Lighthouse.m4v</a></p>
+            <audio controls id='sound'>
+                <source src="http://apollo.gtc.edu/~hurc/152-182/podcast/podcast.mp3" type="audio/mpeg">
+                <source src="http://apollo.gtc.edu/~hurc/152-182/podcast/podcast.ogg" type="audio/ogg">
+                <a href="http://apollo.gtc.edu/~hurc/152-182/podcast/podcast.txt">No audio support.  Download transcript</a>
+            </audio>
+            </media>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2019 Matt Brothen</p>
+
+    </footer>    
+</body>
+<script src="main.js"></script> 
+</html>
