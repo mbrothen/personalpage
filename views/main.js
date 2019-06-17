@@ -1,4 +1,4 @@
-'esversion: 6';
+//these should be split up into seperate js files per page.
 function showMedia() {
     document.getElementById('movie').style.display="inline-block";
     document.getElementById('movieDownload').style.display="inline-block";
@@ -9,26 +9,15 @@ function hideMedia() {
     document.getElementById('movieDownload').style.display="none";
     document.getElementById('sound').style.display="none";
 }
-function handleSubmit(e) {
-    e.preventDefault();
-    const firstName = document.getElementById('firstName').nodeValue;
-    const lastName = document.getElementById('lastName').nodeValue;
-    const email = document.getElementById('email').nodeValue;
-    const message = document.getElementById('message').nodeValue;
 
-    axios({
-        method: "POST",
-        url: "/send",
-        data: {
-            name: name,
-            email: email,
-            message: message
-        }
-    }).then((response)=>{
-        if (respoinse.data.msg === 'success'){
-            document.getElementById('response').innerHTML = "Thank you for the message" + firstName + " we'll be in touch";
-        } else if (response.data.msg === 'fail') {
-            document.getElementById('respoinse').innerHTML = "Your message failed to send, please try again";
-        }
-    });
+$(document).ready(function () {
+    $('#submit').on('click', callServer);
+});
+
+function callServer() {
+    var data = $('form[name="ContactForm"]').serialize();
+    $.post('/ContactService', data, function (returnObject) {
+        $('#result').html(returnObject.result);
+    }, 'json');
+
 }

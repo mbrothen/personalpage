@@ -16,8 +16,8 @@
     </header>
     <nav>
         <!--Insert navigation menu, about.html, contact.html portfilio.html use UL-->
-        <ul>
-            <li><a href="">Home</a></li>
+        <ul>    
+            <li><a href="/">Home</a></li>
             <li><a href="about">About</a></li>
             <li><a href="contact">Contact</a></li>
             <li><a href="portfolio">Portfolio</a></li>
@@ -33,16 +33,12 @@
             <!---->
             <h2>Contact Matt</h2>
             <p>Send me a message and I'll get back to you</p>
-            <form name='ContactForm' method="post" onSubmit={this.handleSumit.bind(this)}>
+            <form name="ContactForm" method="post" action="/ContactMessage">
+            
                 <div>
-                    <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName" name="firstName" required="requierd"/>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required="requierd"/>
                 </div>
-                <div>
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName" reqiured = "required" />
-                </div>
-
                 <div>
                     <label for="email">Email Address:</label>
                     <input type="email" id="email" name="email" required="required" />
@@ -55,16 +51,16 @@
                     <button type="button" id="submit" name="submit">Submit</button>
                 </div>
             </form>
-            <div id="response">
+            <div id="result"></div>
 
-            </div>
         </section>
     </main>
     <footer>
-        
+
         <p>Copyright 2019 Matt Brothen</p>
 
     </footer>    
 </body>
+<script src="/scripts/jquery.js"></script>
 <script src="main.js"></script> 
 </html>
