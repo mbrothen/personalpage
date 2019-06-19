@@ -17,7 +17,7 @@
     <nav>
         <!--Insert navigation menu, about.html, contact.html portfilio.html use UL-->
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="index">Home</a></li>
             <li><a href="about">About</a></li>
             <li><a href="contact">Contact</a></li>
             <li><a href="portfolio">Portfolio</a></li>
@@ -25,30 +25,22 @@
 
     </nav>
     <main>
-            <!--2 paragraph about page-->
-            <h2>Who's Matt?</h2>
-            <p>Matt is a web software development student out of Kenosha Wisconsin.  Matt specializes in fullstack web development.  My tools include using PHP, Java, and javascript for backend application development.  MySQL and mongoDB for datamanagment.  Reach Angular and Sass for front end development.<br>From an organization webpage to a full fledged web application I can build it.</p>
+        <section>
+            <h2>My Work</h2>
+        </section>
 
         <section>
-            <!---->
-            <h2>Multimedia</h2>
-            <div>
-                <button type = "button" onclick="showMedia()">Show</button>
-                <button type ="button" onclick="hideMedia()">Hide</button>
+            <h2>PanTree</h2>
+            <div class = "sidebyside">
+            <aside>
+                <img src="assets/app_placeholder.png" al="PanTree screenshot">
+            </aside>
+            <article>
+                <p>
+                    PanTree is your personal grocery assistant that helps keep your shopping list and the food you already have in sync.  Avoid food waste by knowing what you have and avoid overbuying.  Eliminate emergency trips to the grocery store through proper meal planning and accurate inventory levels.
+                </p>
+            </article>
             </div>
-            <media>
-            <video width="320" height="180" controls id='movie'>
-                <source src="http://apollo.gtc.edu/~hurc/152-182/video/lighthouse.m4v" type="video/mp4">
-                <source src="http://apollo.gtc.edu/~hurc/152-182/video/lighthouse.ogv" type="video/ogg">
-                <img src="http://apollo.gtc.edu/~hurc/152-182/video/lighthouse.jpg">
-            </video> 
-            <p id='movieDownload'><strong>Download Video:</strong><a href="http://apollo.gtc.edu/~hurc/152-182/video/lighthouse.m4v">Lighthouse.m4v</a></p>
-            <audio controls id='sound'>
-                <source src="http://apollo.gtc.edu/~hurc/152-182/podcast/podcast.mp3" type="audio/mpeg">
-                <source src="http://apollo.gtc.edu/~hurc/152-182/podcast/podcast.ogg" type="audio/ogg">
-                <a href="http://apollo.gtc.edu/~hurc/152-182/podcast/podcast.txt">No audio support.  Download transcript</a>
-            </audio>
-            </media>
         </section>
     </main>
     <footer>

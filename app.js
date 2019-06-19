@@ -81,22 +81,6 @@ transporter.verify((error, success) => {
     });
 });
 
-app.post('/ContactMessage', function (request, response) {
-    console.log("Contact Message running");
-    let form = new formidable.IncomingForm();
-    form.parse(request, function (err, fields) {
-        var name = fields.name,
-            email = fields.email,
-            message = fields.message;
-        response.writeHead(200, { 'Content-Type': 'text/html' });
-        response.write('Thank you ' + name + '<br/>');
-        response.write('We will contact you at ' + email + '<br/>');
-        response.end('Your message ' + message + '<br />');
-        console.log('Handled request for ' + name);
-    });
-});
-
-
 const port = 8080;
 app.listen(port);
 console.log('Listening on port: ' + port);

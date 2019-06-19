@@ -1,5 +1,7 @@
 body {
     MAX-width: 100%;
+    width: 1000px;
+    margin: auto;
     overflow-x: hidden;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -51,11 +53,12 @@ nav a:hover {
     color: #696969;
 }
 main {
-    display: inline;
+    margin: auto;
 }
 h2 {
     font-size: 2em;
     font-weight: bold;
+    text-align: center;
 }
 p {
     font-size: 1.3em;
@@ -69,8 +72,43 @@ section div button {
     margin: 5px;
 
 }
+section {
+    width: 800px;
+    margin: auto;
+}
+section form  {
+     display: table;   
+     margin: auto;
+   
+    }
+section div { 
+    display: table-row;  
+}
+section label {
+     display: table-cell; 
+    }
+section input {
+     display: table-cell; 
+    }
+#sidebyside {
+    float: left;
+}
+aside {
+    float: left;
+    margin-right: 50px;
+}
+article {
+    margin-bottom: 
+    }
 #movieDownload, #movie, #sound {
     display: lnline-block;
+}
+#javaskills {
+    display: inline-block;
+    list-style: none;
+}
+.center {
+    text-align: center;
 }
 footer {
     text-align: center;
